@@ -10,7 +10,7 @@ function yams(rolls) {
   if (occurance == 3) {
     count = 30;
   }
-    
+
   if (occurance == 5) {
     count = 50;
   }
@@ -19,13 +19,12 @@ function yams(rolls) {
 }
 
 function countOccurence(roll) {
-  let count = 0;
+    let count = 0;
+
   for (let j = 0; j < roll.length; j++) {
     for (let y = 0; y < roll.length; y++) {
-      if (roll[j] == roll[i]) {
-        occurance += 1;
-      } else {
-        occurance = 0;
+      if (roll[j] == roll[y]) {
+        count += 1;
       }
     }
   }
