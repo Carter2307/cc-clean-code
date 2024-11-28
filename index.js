@@ -6,13 +6,11 @@ function yams(rolls) {
     let roll = rolls[i];
     occurance = countOccurence(roll);
   }
+    
+    console.log(occurance);
 
   if (occurance == 3) {
     count = 30;
-  }
-
-  if (occurance == 5) {
-    count = 50;
   }
 
   return count;
@@ -24,8 +22,10 @@ function countOccurence(roll) {
   for (let j = 0; j < roll.length; j++) {
     for (let y = 0; y < roll.length; y++) {
       if (roll[j] == roll[y]) {
-        count += 1;
+          count += 1;
+          break;
       }
+        break;
     }
   }
 
