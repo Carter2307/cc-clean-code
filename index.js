@@ -8,12 +8,24 @@ function yams(rolls) {
         roll.forEach((element, index) => {
             if (element === [1, 1, 1, 2, 2][index]) {
                 occurance += 1;
+
+                if (occurance === 3) {
+                    occurance = 0;
+                    return count += 30;
+                }
             }
+
+            if (element === [1, 4, 1, 1, 2][index]) {
+                occurance += 1;
+
+                if (occurance === 3) {
+                    occurance = 0;
+                    return count += 30;
+                }
+            }
+
         });
 
-        if (contains === roll.length) {
-            count += 30;
-        }
     }
 
 
